@@ -284,11 +284,11 @@ RCT_EXPORT_METHOD(openPicker:(NSDictionary *)options
                                          @"SyncedFaces" : @(PHAssetCollectionSubtypeAlbumSyncedFaces),
                                          @"SyncedAlbum" : @(PHAssetCollectionSubtypeAlbumSyncedAlbum),
                                          @"Imported" : @(PHAssetCollectionSubtypeAlbumImported),
-                                         
+
                                          //cloud albums
                                          @"PhotoStream" : @(PHAssetCollectionSubtypeAlbumMyPhotoStream),
                                          @"CloudShared" : @(PHAssetCollectionSubtypeAlbumCloudShared),
-                                         
+
                                          //smart albums
                                          @"Generic" : @(PHAssetCollectionSubtypeSmartAlbumGeneric),
                                          @"Panoramas" : @(PHAssetCollectionSubtypeSmartAlbumPanoramas),
@@ -304,8 +304,6 @@ RCT_EXPORT_METHOD(openPicker:(NSDictionary *)options
                                          @"Screenshots" : @(PHAssetCollectionSubtypeSmartAlbumScreenshots),
                                          @"DepthEffect" : @(PHAssetCollectionSubtypeSmartAlbumDepthEffect),
                                          @"LivePhotos" : @(PHAssetCollectionSubtypeSmartAlbumLivePhotos),
-                                         @"Animated" : @(PHAssetCollectionSubtypeSmartAlbumAnimated),
-                                         @"LongExposure" : @(PHAssetCollectionSubtypeSmartAlbumLongExposures),
                                          };
                 NSMutableArray *albumsToShow = [NSMutableArray arrayWithCapacity:smartAlbums.count];
                 for (NSString* smartAlbum in smartAlbums) {
